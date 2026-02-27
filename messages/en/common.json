@@ -1,0 +1,30 @@
+{
+  "appName": "RetroApp",
+  "tagline": "Real-time retrospectives for agile teams",
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "teams": "Teams",
+    "settings": "Settings",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "loading": "Loading...",
+    "confirm": "Confirm",
+    "back": "Back"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "notFound": "Page not found",
+    "unauthorized": "You are not authorized to view this page."
+  }
+}

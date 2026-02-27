@@ -1,0 +1,14 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {name}!",
+    "teams": {
+      "title": "Your Teams",
+      "empty": "You haven't joined any teams yet.",
+      "emptyAction": "Create your first team to get started.",
+      "createButton": "Create Team",
+      "membersCount": "{count, plural, =1 {1 member} other {# members}}",
+      "boardsCount": "{count, plural, =1 {1 board} other {# boards}}"
+    }
+  }
+}

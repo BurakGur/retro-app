@@ -1,0 +1,53 @@
+{
+  "teams": {
+    "create": {
+      "title": "Create Team",
+      "description": "Create a new team to start running retrospectives.",
+      "nameLabel": "Team Name",
+      "namePlaceholder": "e.g. Engineering Team",
+      "submitButton": "Create Team"
+    },
+    "detail": {
+      "boards": "Boards",
+      "members": "Members",
+      "settings": "Settings",
+      "noBoards": "No boards yet. Create your first retrospective!",
+      "createBoard": "New Board"
+    },
+    "members": {
+      "title": "Team Members",
+      "invite": "Invite Members",
+      "inviteLink": "Invite Link",
+      "inviteLinkDescription": "Share this link to invite people to your team.",
+      "copyLink": "Copy Link",
+      "role": "Role",
+      "changeRole": "Change Role",
+      "removeMember": "Remove Member",
+      "removeMemberConfirm": "Are you sure you want to remove this member?",
+      "leaveTeam": "Leave Team",
+      "leaveTeamConfirm": "Are you sure you want to leave this team?",
+      "roles": {
+        "owner": "Owner",
+        "admin": "Admin",
+        "facilitator": "Facilitator",
+        "member": "Member"
+      }
+    },
+    "settings": {
+      "title": "Team Settings",
+      "nameLabel": "Team Name",
+      "saveButton": "Save Changes",
+      "dangerZone": "Danger Zone",
+      "deleteTeam": "Delete Team",
+      "deleteTeamDescription": "Permanently delete this team and all its data.",
+      "deleteTeamConfirm": "Are you sure? This action cannot be undone."
+    },
+    "join": {
+      "title": "Join Team",
+      "description": "You've been invited to join {teamName}.",
+      "joinButton": "Join Team",
+      "alreadyMember": "You are already a member of this team.",
+      "invalidCode": "This invite link is invalid or has expired."
+    }
+  }
+}
