@@ -57,7 +57,7 @@ The Retrospective App is an open-source, real-time web application designed for 
 | ------------------ | ----------------------- | -------------------------------------------- |
 | Frontend Framework | Next.js 16 (App Router) | SSR/SSG, API routes, middleware              |
 | UI Components      | shadcn/ui               | Accessible, customizable component library   |
-| Styling            | Tailwind CSS 3.4+       | Utility-first CSS framework                  |
+| Styling            | Tailwind CSS 4           | Utility-first CSS framework                  |
 | State Management   | Zustand + React Query   | Client state + server state                  |
 | Backend/BaaS       | Supabase                | PostgreSQL, Auth, Realtime, Storage          |
 | ORM                | Supabase JS Client      | Type-safe database queries                   |
@@ -445,16 +445,16 @@ The Supabase MCP server is configured in the project root for Claude Code integr
 
 ## 11. Development Phases
 
-### Phase 1: Foundation (Weeks 1–3)
+### Phase 1: Foundation (Weeks 1–3) ✅ COMPLETED
 
-- Next.js 16 project setup with App Router, TypeScript, Tailwind, shadcn/ui
-- Supabase project creation and MCP server configuration
-- Authentication system (email, OAuth, magic link)
-- Database schema creation with migrations
-- RLS policies for all tables
-- Basic team CRUD (create, join, manage)
-- i18n setup with next-intl (EN only initially, multi-lang infrastructure ready)
-- Landing page and auth pages
+- Next.js 16.1.6 project setup with App Router, TypeScript, Tailwind CSS 4, shadcn/ui
+- Supabase project creation (eu-central-1) and MCP server configuration
+- Authentication system (email/password + Google OAuth)
+- Database schema: 9 tables, 4 enums, 3 helper functions (8 migrations)
+- RLS policies for all tables (security advisors: 0 warnings)
+- Team CRUD (create, update, delete, invite link join, member role management)
+- i18n setup with next-intl (EN only, `[locale]` prefix routing)
+- Landing page, auth pages, dashboard, team pages
 
 ### Phase 2: Core Board Experience (Weeks 4–6)
 

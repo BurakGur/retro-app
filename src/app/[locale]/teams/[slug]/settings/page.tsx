@@ -37,7 +37,7 @@ export default function TeamSettingsPage({
   const { slug } = use(params);
   const t = useTranslations('teams.settings');
   const router = useRouter();
-  const { data: team, isLoading } = useTeam(slug);
+  const { data: team } = useTeam(slug);
   const updateTeam = useUpdateTeam();
   const deleteTeam = useDeleteTeam();
 
@@ -46,21 +46,7 @@ export default function TeamSettingsPage({
     values: { name: team?.name ?? '' },
   });
 
-  if (isLoading) {
-    return (
-      <div className="container mx-auto px-4 py-8">
-        <p className="text-muted-foreground">Loading...</p>
-      </div>
-    );
-  }
-
-  if (!team) {
-    return (
-      <div className="container mx-auto px-4 py-8">
-        <p className="text-muted-foreground">Team not found</p>
-      </div>
-    );
-  }
+  if (!team) return null;
 
   async function onSubmit(data: UpdateTeamFormData) {
     await updateTeam.mutateAsync({ id: team!.id, name: data.name });
@@ -73,9 +59,7 @@ export default function TeamSettingsPage({
   }
 
   return (
-    <div className="container mx-auto max-w-2xl px-4 py-8">
-      <h1 className="mb-6 text-2xl font-bold">{t('title')}</h1>
-
+    <div className="max-w-2xl space-y-8">
       <Card>
         <CardContent className="pt-6">
           <Form {...form}>
@@ -100,8 +84,6 @@ export default function TeamSettingsPage({
           </Form>
         </CardContent>
       </Card>
-
-      <Separator className="my-8" />
 
       <Card className="border-destructive">
         <CardHeader>
