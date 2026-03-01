@@ -6,6 +6,7 @@ import { QueryProvider } from '@/components/providers/query-provider';
 import { AuthListener } from '@/components/auth/auth-listener';
 import { Navbar } from '@/components/layout/navbar';
 import { Toaster } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 export default async function LocaleLayout({
   children,
@@ -25,10 +26,12 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <QueryProvider>
-        <AuthListener />
-        <Navbar />
-        <main>{children}</main>
-        <Toaster />
+        <TooltipProvider>
+          <AuthListener />
+          <Navbar />
+          <main>{children}</main>
+          <Toaster />
+        </TooltipProvider>
       </QueryProvider>
     </NextIntlClientProvider>
   );

@@ -1,0 +1,69 @@
+{
+  "boards": {
+    "create": {
+      "title": "Create Board",
+      "description": "Start a new retrospective for your team.",
+      "titleLabel": "Board Title",
+      "titlePlaceholder": "e.g. Sprint 42 Retro",
+      "templateLabel": "Template",
+      "templatePlaceholder": "Select a template",
+      "maxVotesLabel": "Max Votes Per Person",
+      "submitButton": "Create Board",
+      "creating": "Creating..."
+    },
+    "templates": {
+      "madSadGlad": "Mad, Sad, Glad",
+      "madSadGladDesc": "Express frustrations, disappointments, and celebrations",
+      "startStopContinue": "Start, Stop, Continue",
+      "startStopContinueDesc": "Identify what to start, stop, and continue doing",
+      "4ls": "4Ls",
+      "4lsDesc": "Liked, Learned, Lacked, Longed For",
+      "kalm": "KALM",
+      "kalmDesc": "Keep, Add, Less, More",
+      "sailboat": "Sailboat",
+      "sailboatDesc": "Wind, Anchor, Rocks, Island metaphor",
+      "custom": "Custom",
+      "customDesc": "Create your own columns"
+    },
+    "status": {
+      "draft": "Draft",
+      "active": "Writing",
+      "voting": "Voting",
+      "discussing": "Discussing",
+      "completed": "Completed"
+    },
+    "header": {
+      "createdBy": "Facilitated by {name}",
+      "participants": "{count} online"
+    },
+    "phase": {
+      "nextPhase": "Next Phase",
+      "completeBoard": "Complete Board",
+      "confirmNext": "Move to {phase} phase?",
+      "confirmComplete": "Complete this retrospective? This cannot be undone."
+    },
+    "card": {
+      "placeholder": "Add a card...",
+      "addCard": "Add",
+      "deleteConfirm": "Delete this card?",
+      "anonymous": "Anonymous"
+    },
+    "voting": {
+      "vote": "Vote",
+      "unvote": "Remove vote",
+      "votesRemaining": "{count} votes remaining",
+      "noVotesLeft": "No votes remaining",
+      "votesCount": "{count, plural, one {# vote} other {# votes}}"
+    },
+    "empty": {
+      "noCards": "No cards yet. Be the first to add one!",
+      "notActive": "Waiting for the facilitator to start writing phase."
+    },
+    "boardList": {
+      "title": "Boards",
+      "empty": "No boards yet. Create your first retrospective!",
+      "newBoard": "New Board",
+      "cardsCount": "{count, plural, one {# card} other {# cards}}"
+    }
+  }
+}

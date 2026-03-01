@@ -8,7 +8,7 @@ const intlMiddleware = createMiddleware({
   defaultLocale,
 });
 
-const protectedPaths = ['/dashboard', '/teams', '/action-items', '/settings'];
+const protectedPaths = ['/dashboard', '/teams', '/boards', '/action-items', '/settings'];
 const authPaths = ['/auth/login', '/auth/register'];
 
 function getPathWithoutLocale(pathname: string): string {

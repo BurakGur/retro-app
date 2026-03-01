@@ -423,6 +423,17 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      create_board_with_columns: {
+        Args: {
+          p_custom_columns?: Json
+          p_facilitator_id: string
+          p_max_votes?: number
+          p_team_id: string
+          p_template: Database["public"]["Enums"]["board_template"]
+          p_title: string
+        }
+        Returns: string
+      }
       get_team_role: {
         Args: { p_team_id: string; p_user_id: string }
         Returns: Database["public"]["Enums"]["team_role"]
